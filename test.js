@@ -18,8 +18,10 @@ describe("AppearIn", function () {
             // testing if the browser is WebRTC compatible...
             // In reality this test here is much worse than the test in the test suite
             if (navigator.mozGetUserMedia || navigator.webkitGetUserMedia || navigator.getUserMedia) {
+                console.log('HAS navigator.getUserMedia');
                 assert.ok(appearin.isWebRtcCompatible());
             } else {
+                console.log('NO navigator.getUserMedia');
                 assert.ok(!appearin.isWebRtcCompatible());
             }
         });

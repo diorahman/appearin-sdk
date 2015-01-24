@@ -8,12 +8,14 @@ describe("AppearIn", function () {
     var roomNameWithoutPrependingSlash = "cool-panda";
     var BASE_URL = "https://appear.in";
 
+    navigator.getUserMedia = navigator.getUserMedia || {};
+
     beforeEach(function () {
         appearin = new AppearIn({ debug: true });
     });
 
     describe("isWebRtcCompatible", function () {
-        it.skip("should return true only if the browser is WebRTC compatible", function () {
+        it("should return true only if the browser is WebRTC compatible", function () {
             // This test in itself is a bit weird, since it requires actually
             // testing if the browser is WebRTC compatible...
             // In reality this test here is much worse than the test in the test suite

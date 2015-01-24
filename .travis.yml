@@ -3,6 +3,6 @@ node_js:
 - '0.10'
 env:
   global:
-      - secure: o3NYTET24WEMG8yPT2sY/2qJhtSu9EEypkYuROMSsePQJAphl52zGjpc9iFTx3uHEv1F8EIMWzdpqm1c5Vx1gbHuINDymowibdgxXqc8JfTttv5RemWpTJvCWnWmUIGDC54U1G7gcApdZ+d7eItqFhvZEZDlGYeLugR12CFtrHQ=
-          - secure: b1c5x8jWzcZwHKWIVK1g7j2B0EIzNpVaiMDsasHSJp48y6CTTEE1sRbB9m7wLeHdf/mEELUDstavNz24H8QLOPhjK1u2scInf7CzfIO80DQ/2xlGIyzM9ypz2bN00tyXCvenr9kAUrIGZKlu7Z5exqrwk5BV6LyldYku2f9FRpA=
+  - secure: o3NYTET24WEMG8yPT2sY/2qJhtSu9EEypkYuROMSsePQJAphl52zGjpc9iFTx3uHEv1F8EIMWzdpqm1c5Vx1gbHuINDymowibdgxXqc8JfTttv5RemWpTJvCWnWmUIGDC54U1G7gcApdZ+d7eItqFhvZEZDlGYeLugR12CFtrHQ=
+  - secure: b1c5x8jWzcZwHKWIVK1g7j2B0EIzNpVaiMDsasHSJp48y6CTTEE1sRbB9m7wLeHdf/mEELUDstavNz24H8QLOPhjK1u2scInf7CzfIO80DQ/2xlGIyzM9ypz2bN00tyXCvenr9kAUrIGZKlu7Z5exqrwk5BV6LyldYku2f9FRpA=
 

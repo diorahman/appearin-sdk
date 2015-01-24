@@ -24,6 +24,7 @@ describe("AppearIn", function () {
                 console.log('NO navigator.getUserMedia');
                 assert.ok(!appearin.isWebRtcCompatible());
             }
+            console.log('appearin.isWebRtcCompatible()', appearin.isWebRtcCompatible());
         });
     });
 

@@ -119,7 +119,7 @@ describe("AppearIn", function () {
             wrapperElement.appendChild(iframe);
         });
 
-        it("should throw if all parameters are missing", function () {
+        it.skip("should throw if all parameters are missing", function () {
             try {
                 appearin.addRoomToElementById();
             } catch(e) {

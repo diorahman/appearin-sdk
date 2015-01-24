@@ -129,7 +129,7 @@ describe("AppearIn", function () {
             throw new Error("should not get here");
         });
 
-        it("should throw if the id parameter is undefined", function () {
+        it.skip("should throw if the id parameter is undefined", function () {
             try {
                 appearin.addRoomToElementById(undefined, roomName);
             } catch(e) { 
@@ -139,7 +139,7 @@ describe("AppearIn", function () {
             throw new Error("should not get here");
         });
 
-        it("should throw if the roomName parameter is missing", function () {
+        it.skip("should throw if the roomName parameter is missing", function () {
             try {
                 appearin.addRoomToElementById(iframe.id);
             } catch(e) {

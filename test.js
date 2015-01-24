@@ -110,12 +110,11 @@ describe("AppearIn", function () {
         var wrapperElement = document.createElement("div");
         document.body.appendChild(wrapperElement);
 
-        var iframe;
-
         beforeEach(function () {
             wrapperElement.innerHTML = "";
-            iframe = document.createElement("iframe");
-            iframe.setAttribute("id", "appearin-iframe");
+            var iframe = document.createElement("iframe");
+            var id = "appearin-iframe";
+            iframe.setAttribute("id", id);
             wrapperElement.appendChild(iframe); 
         });
 

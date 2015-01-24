@@ -115,21 +115,20 @@ describe("AppearIn", function () {
         beforeEach(function () {
             wrapperElement.innerHTML = "";
             iframe = document.createElement("iframe");
-            iframe.id = "appearin-iframe";
-            wrapperElement.appendChild(iframe);
+            iframe.setAttribute("id", "appearin-iframe");
+            wrapperElement.appendChild(iframe); 
         });
 
-        it.skip("should throw if all parameters are missing", function () {
+        it("should throw if all parameters are missing", function () {
             try {
                 appearin.addRoomToElementById();
             } catch(e) {
-                wrapperElement.removeChild(iframe);
                 return;
             }
             throw new Error("should not get here");
         });
 
-        it.skip("should throw if the id parameter is undefined", function () {
+        it("should throw if the id parameter is undefined", function () {
             try {
                 appearin.addRoomToElementById(undefined, roomName);
             } catch(e) { 
@@ -149,18 +148,18 @@ describe("AppearIn", function () {
             throw new Error("should not get here");
         });
 
-        it("should return if the element does not exist", function () {
+        it.skip("should return if the element does not exist", function () {
             // maybe this should throw instead to keep consistent?
             appearin.addRoomToElementById("iframe-id-does-not-exist", roomName);
             assert.ok(iframe.src === "");
         });
 
-        it("should add the room to the iframe", function () {
+        it.skip("should add the room to the iframe", function () {
             appearin.addRoomToElementById(iframe.id, roomName);
             assert.ok(iframe.src === BASE_URL + roomName);
         });
 
-        it("should handle roomNames with prepending slash", function () {
+        it.skip("should handle roomNames with prepending slash", function () {
             appearin.addRoomToElementById(iframe.id, roomName);
             assert.ok(iframe.src === BASE_URL + roomName);
         });

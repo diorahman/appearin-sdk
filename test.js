@@ -8,8 +8,6 @@ describe("AppearIn", function () {
     var roomNameWithoutPrependingSlash = "cool-panda";
     var BASE_URL = "https://appear.in";
 
-    navigator.getUserMedia = navigator.getUserMedia || {};
-
     beforeEach(function () {
         appearin = new AppearIn({ debug: true });
     });

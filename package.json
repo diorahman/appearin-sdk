@@ -5,7 +5,7 @@
   "browser": "index-browser.js",
   "main": "index-node.js",
   "scripts": {
-    "test": "zuul -- test.js",
+    "test": "DEBUG=zuul* zuul -- test.js",
     "test-local": "zuul --local --open -- test.js"
   },
   "keywords": [

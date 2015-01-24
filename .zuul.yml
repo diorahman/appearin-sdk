@@ -1,4 +1,4 @@
 ui: mocha-bdd
 browsers:
     - name: opera
-      version: 26..latest
+      version: 12..latest

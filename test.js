@@ -123,7 +123,7 @@ describe("AppearIn", function () {
             try {
                 appearin.addRoomToElementById();
             } catch(e) {
-                iframe = null;
+                wrapperElement.removeChild(iframe);
                 return;
             }
             throw new Error("should not get here");
@@ -132,8 +132,8 @@ describe("AppearIn", function () {
         it("should throw if the id parameter is undefined", function () {
             try {
                 appearin.addRoomToElementById(undefined, roomName);
-            } catch(e) {
-                iframe = null;
+            } catch(e) { 
+                wrapperElement.removeChild(iframe);
                 return;
             }
             throw new Error("should not get here");
@@ -143,7 +143,7 @@ describe("AppearIn", function () {
             try {
                 appearin.addRoomToElementById(iframe.id);
             } catch(e) {
-                iframe = null;
+                wrapperElement.removeChild(iframe);
                 return;
             }
             throw new Error("should not get here");

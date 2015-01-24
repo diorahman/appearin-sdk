@@ -13,7 +13,7 @@ describe("AppearIn", function () {
     });
 
     describe("isWebRtcCompatible", function () {
-        it("should return true only if the browser is WebRTC compatible", function () {
+        it.skip("should return true only if the browser is WebRTC compatible", function () {
             // This test in itself is a bit weird, since it requires actually
             // testing if the browser is WebRTC compatible...
             // In reality this test here is much worse than the test in the test suite
@@ -123,6 +123,7 @@ describe("AppearIn", function () {
             try {
                 appearin.addRoomToElementById();
             } catch(e) {
+                iframe = null;
                 return;
             }
             throw new Error("should not get here");
@@ -132,6 +133,7 @@ describe("AppearIn", function () {
             try {
                 appearin.addRoomToElementById(undefined, roomName);
             } catch(e) {
+                iframe = null;
                 return;
             }
             throw new Error("should not get here");
@@ -141,6 +143,7 @@ describe("AppearIn", function () {
             try {
                 appearin.addRoomToElementById(iframe.id);
             } catch(e) {
+                iframe = null;
                 return;
             }
             throw new Error("should not get here");
